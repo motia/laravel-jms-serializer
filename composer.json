@@ -1,0 +1,17 @@
+{
+    "author": "Mouti'a Benachour",
+    "name": "motia/laravel-jms-serializer",
+    "require": {
+      "jms/serializer": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Motia\\LaravelJMSSerializer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ]
+    }
+}
