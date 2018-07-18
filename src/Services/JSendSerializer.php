@@ -18,7 +18,7 @@ class JSendSerializer implements ResponseSerializer
         $this->normalizer = $normalizer;
     }
 
-    private function normalize($object, $context = null) {
+    public function normalize($object, $context = null) {
         if($object === null) {
             return null;
         }
