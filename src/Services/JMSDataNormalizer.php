@@ -17,7 +17,7 @@ class JMSDataNormalizer implements DataNormalizer
     private $serializer;
     private $cacheDir;
 
-    public function __construct($config, $debug)
+    public function __construct($config)
     {
         $this->cacheDir = $config['cacheDir'];
 
@@ -30,7 +30,7 @@ class JMSDataNormalizer implements DataNormalizer
             ->setCacheDir(
                 $config['cacheDir']
             )
-            ->setDebug($debug)
+            ->setDebug($config['debug'])
             ->addDefaultHandlers()
             ->configureHandlers(function (HandlerRegistry $registry) use ($config) {
                 foreach ($config['serializers'] as $serializer) {

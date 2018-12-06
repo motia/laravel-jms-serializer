@@ -37,9 +37,7 @@ class LengthAwarePaginatorSerializer implements SubscribingHandlerInterface
             $resultsType['params'] = $type['params'];
         }
 
-        $shouldSetRoot = null === $visitor->getRoot();
-
-        $itemsKey = $context->attributes->get('itemsKey')->getOrElse('items');
+        $itemsKey = $context->getAttribute('itemsKey')->getOrElse('items');
         $data = array(
             'pagination' => [
                 'currentPage' => $paginator->currentPage(),
@@ -50,8 +48,6 @@ class LengthAwarePaginatorSerializer implements SubscribingHandlerInterface
             $itemsKey => $visitor->getNavigator()->accept($paginator->items(), $resultsType, $context),
         );
 
-        if ($shouldSetRoot) {
-            $visitor->setRoot($data);
-        }
+        $visitor->visitArray($data);
     }
 }

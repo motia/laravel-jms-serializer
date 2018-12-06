@@ -5,6 +5,7 @@ use Motia\LaravelJMSSerializer\Serializer\LengthAwarePaginatorSerializer;
 use Motia\LaravelJMSSerializer\Serializer\UuidSerializer;
 
 return [
+    'debug' => false,
     'metadata' => [
         'path' => app_path('Entities'),
         'namespace' => 'App\\Entities'

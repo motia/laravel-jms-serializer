@@ -37,10 +37,9 @@ class SerializerServiceProvider extends ServiceProvider
 //            base_path('vendor/jms/serializer/src'));
 
     $this->app->singleton(DataNormalizer::class, function (Application $app) {
-
       /** @var \Illuminate\Config\Repository $config */
       $config = $app->make('Illuminate\Config\Repository');
-      return new JMSDataNormalizer($config->get('serializer'), $config->get('app.debug'));
+      return new JMSDataNormalizer($config->get('serializer'));
     });
 
     $this->app->bind(ResponseSerializer::class, JSendSerializer::class);
