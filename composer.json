@@ -2,7 +2,7 @@
     "author": "Mouti'a Benachour",
     "name": "motia/laravel-jms-serializer",
     "require": {
-      "jms/serializer": "^1.8"
+      "jms/serializer": "^2.0"
     },
     "autoload": {
         "psr-4": {
