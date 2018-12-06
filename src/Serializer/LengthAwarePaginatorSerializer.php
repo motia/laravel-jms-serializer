@@ -37,17 +37,15 @@ class LengthAwarePaginatorSerializer implements SubscribingHandlerInterface
             $resultsType['params'] = $type['params'];
         }
 
-        $itemsKey = $context->getAttribute('itemsKey')->getOrElse('items');
-        $data = array(
+        $itemsKey = $context->hasAttribute('itemsKey') ? $context->getAttribute('itemsKey') : 'items';
+        return array(
             'pagination' => [
                 'currentPage' => $paginator->currentPage(),
                 'perPage' => $paginator->perPage(),
                 'total' => $paginator->total(),
                 'lastPage' => $paginator->lastPage(),
             ],
-            $itemsKey => $visitor->getNavigator()->accept($paginator->items(), $resultsType, $context),
+            $itemsKey => $visitor->visitArray($paginator->items(), $resultsType),
         );
-
-        $visitor->visitArray($data);
     }
 }
