@@ -41,7 +41,13 @@ class ClearSerializerCache extends Command
     public function handle()
     {
         $dir = $this->normalizer->getCacheDir();
-        File::cleanDirectory($dir);
+        foreach (File::files($dir) as $file) {
+          File::delete($file->getPathname());
+        }
+
+        foreach (File::directories($dir) as $item) {
+          File::deleteDirectory($item);
+        }
         $this->info("Serializer Cache is cleared");
     }
 }
