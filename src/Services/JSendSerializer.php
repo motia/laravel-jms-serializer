@@ -34,7 +34,7 @@ class JSendSerializer implements ResponseSerializer
 
     private  function serializeResponse($status, $data = null, $message = null, $code = 200, $context = null){
         $compacts = ['status'];
-        if($data) {
+        if(is_array($data) || $data) {
             $data = $this->normalize($data, $context);
             $compacts[] = 'data';
         }
