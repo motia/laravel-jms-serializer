@@ -61,7 +61,7 @@ class CarbonSerializer implements SubscribingHandlerInterface
         return $methods;
     }
 
-    public function __construct($defaultFormat = Carbon::ISO8601, $defaultTimezone = 'UTC', $xmlCData = true)
+    public function __construct($defaultFormat = Carbon::ATOM, $defaultTimezone = 'UTC', $xmlCData = true)
     {
         $this->defaultFormat = $defaultFormat;
         $this->defaultTimezone = new DateTimeZone($defaultTimezone);
