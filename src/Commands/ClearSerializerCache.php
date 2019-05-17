@@ -46,7 +46,7 @@ class ClearSerializerCache extends Command
         }
 
         foreach (File::directories($dir) as $item) {
-          File::deleteDirectory($item);
+          File::deleteDirectory($item, true);
         }
         $this->info("Serializer Cache is cleared");
     }
