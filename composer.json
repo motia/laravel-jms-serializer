@@ -1,6 +1,7 @@
 {
     "author": "Mouti'a Benachour",
     "name": "motia/laravel-jms-serializer",
+    "license": "MIT",
     "require": {
       "jms/serializer": "^2.0"
     },
