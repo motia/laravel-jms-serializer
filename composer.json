@@ -14,5 +14,12 @@
         "classmap": [
             "tests/"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Motia\\LaravelJMSSerializer\\SerializerServiceProvider"
+            ]
+        }
     }
 }
