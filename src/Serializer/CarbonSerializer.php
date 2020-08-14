@@ -1,6 +1,6 @@
 <?php
 
-namespace Motia\LaravelJMSSerializer\Serializer;
+namespace Cone\LaravelJMSSerializer\Serializer;
 
 use Carbon\Carbon;
 use JMS\Serializer\Context;

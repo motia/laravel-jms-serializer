@@ -1,8 +1,8 @@
 <?php
 
-use Motia\LaravelJMSSerializer\Serializer\CarbonSerializer;
-use Motia\LaravelJMSSerializer\Serializer\LengthAwarePaginatorSerializer;
-use Motia\LaravelJMSSerializer\Serializer\UuidSerializer;
+use Cone\LaravelJMSSerializer\Serializer\CarbonSerializer;
+use Cone\LaravelJMSSerializer\Serializer\LengthAwarePaginatorSerializer;
+use Cone\LaravelJMSSerializer\Serializer\UuidSerializer;
 
 return [
     'debug' => false,

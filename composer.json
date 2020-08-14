@@ -1,24 +1,26 @@
 {
-    "author": "Mouti'a Benachour",
-    "name": "motia/laravel-jms-serializer",
+    "authors": [{
+        "name": "WTT-CampusOne GmbH"
+    }],
+    "name": "cone/laravel-jms-serializer",
     "license": "MIT",
     "require": {
-      "jms/serializer": "^2.0"
+      "jms/serializer": "^3.0"
     },
     "autoload": {
         "psr-4": {
-            "Motia\\LaravelJMSSerializer\\": "src/"
+            "Cone\\LaravelJMSSerializer\\": "src/"
         }
     },
     "autoload-dev": {
         "classmap": [
-            "tests/"
+
         ]
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Motia\\LaravelJMSSerializer\\SerializerServiceProvider"
+                "Cone\\LaravelJMSSerializer\\SerializerServiceProvider"
             ]
         }
     }

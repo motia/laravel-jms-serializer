@@ -1,6 +1,6 @@
 <?php
 
-namespace Motia\LaravelJMSSerializer\Serializer;
+namespace Cone\LaravelJMSSerializer\Serializer;
 
 
 use Illuminate\Pagination\LengthAwarePaginator;

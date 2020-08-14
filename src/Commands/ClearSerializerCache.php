@@ -1,9 +1,9 @@
 <?php
 
-namespace Motia\LaravelJMSSerializer\Commands;
+namespace Cone\LaravelJMSSerializer\Commands;
 
 
-use Motia\LaravelJMSSerializer\Contracts\DataNormalizer;
+use Cone\LaravelJMSSerializer\Contracts\DataNormalizer;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 

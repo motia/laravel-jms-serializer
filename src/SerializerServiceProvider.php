@@ -1,12 +1,12 @@
 <?php
 
-namespace Motia\LaravelJMSSerializer;
+namespace Cone\LaravelJMSSerializer;
 
-use Motia\LaravelJMSSerializer\Commands\ClearSerializerCache;
-use Motia\LaravelJMSSerializer\Contracts\DataNormalizer;
-use Motia\LaravelJMSSerializer\Contracts\ResponseSerializer;
-use Motia\LaravelJMSSerializer\Services\JSendSerializer;
-use Motia\LaravelJMSSerializer\Services\JMSDataNormalizer;
+use Cone\LaravelJMSSerializer\Commands\ClearSerializerCache;
+use Cone\LaravelJMSSerializer\Contracts\DataNormalizer;
+use Cone\LaravelJMSSerializer\Contracts\ResponseSerializer;
+use Cone\LaravelJMSSerializer\Services\JSendSerializer;
+use Cone\LaravelJMSSerializer\Services\JMSDataNormalizer;
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;

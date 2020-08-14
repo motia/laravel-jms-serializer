@@ -1,10 +1,10 @@
 <?php
 
-namespace Motia\LaravelJMSSerializer\Services;
+namespace Cone\LaravelJMSSerializer\Services;
 
 use Illuminate\Http\JsonResponse;
-use Motia\LaravelJMSSerializer\Contracts\DataNormalizer;
-use Motia\LaravelJMSSerializer\Contracts\ResponseSerializer;
+use Cone\LaravelJMSSerializer\Contracts\DataNormalizer;
+use Cone\LaravelJMSSerializer\Contracts\ResponseSerializer;
 
 class JSendSerializer implements ResponseSerializer
 {

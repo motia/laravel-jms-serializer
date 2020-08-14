@@ -11,12 +11,12 @@ The default implemntation of `ResponseSerializer` follows the [jsend api schema]
 ## Installation 
 
 ```
-composer require motia/laravel-jms-serializer
+composer require cone/laravel-jms-serializer
 ```
 Register the package service provider by adding it to`config/app.php`
 ```
   ...
-    Motia\LaravelJMSSerializer\SerializerServiceProvider::class 
+    Cone\LaravelJMSSerializer\SerializerServiceProvider::class 
   ...
 ```
 
@@ -26,7 +26,7 @@ Register the package service provider by adding it to`config/app.php`
 ```php
   // MyController.php
   ...
-   public function hello(\Motia\LaravelJMSSerializer\Contracts\ResponseSerializer $serializer) {
+   public function hello(\Cone\LaravelJMSSerializer\Contracts\ResponseSerializer $serializer) {
      ...
     return $serializer->success($object);
   }

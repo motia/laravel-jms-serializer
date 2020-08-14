@@ -1,6 +1,6 @@
 <?php
 
-namespace Motia\LaravelJMSSerializer\Contracts;
+namespace Cone\LaravelJMSSerializer\Contracts;
 
 
 interface ResponseSerializer
