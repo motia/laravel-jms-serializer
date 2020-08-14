@@ -32,9 +32,6 @@ class SerializerServiceProvider extends ServiceProvider
       ClearSerializerCache::class
     ]);
     AnnotationRegistry::registerLoader('class_exists');
-//        AnnotationRegistry::registerAutoloadNamespace(
-//            'JMS\Serializer\Annotation',
-//            base_path('vendor/jms/serializer/src'));
 
     $this->app->singleton(DataNormalizer::class, function (Application $app) {
       /** @var \Illuminate\Config\Repository $config */
